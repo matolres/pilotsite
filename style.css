@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+body {
+background-color: antiquewhite;
+display: block;
+}
+header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px;
+    border-bottom: 5px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.grid_container1 {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 380px;
+    grid-auto-flow: dense;
+    max-height: 600px;
+    max-width: 1900px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+   
+}
+p {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.grid_container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: dense;
+    max-height: 1000px;
+    max-width: 1800px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+@media (max-width: 600px) {
+    .grid_container2 {
+    display: grid;
+    grid-template-rows:repeat(auto-fit, minmax(400px, 1fr 1fr 1fr));
+    grid-auto-columns: 380px;
+    grid-auto-flow: dense;
+    max-height: 600px;
+    max-width: 1900px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    }
+    .img2 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .img1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+    
+
+.profil_container {
+    display: flex;
+    justify-content: center;
+}
+#profil {
+    width: auto;
+}
+.text {
+    padding: 15px;
+}
+    img {
+    width: 100%;
+    height: 100%;
+}
+.img2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color: darkred;
+}
+.artboard {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.video {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 380px;
+    grid-auto-flow: dense;
+    max-height: 1600px;
+    max-width: 1800px;
+    object-fit: cover;
+    place-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    max-width: 1800px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
